@@ -222,7 +222,31 @@ const GetPos4rmCoord = (coord: number[]) => {
 
 const BoardPosMap = {}
 
+export function DrawCrown(ctx: CanvasRenderingContext2D, x: number, y: number, size: number) {
+    // Set the line width and stroke color
+    ctx.lineWidth = size / 10;
+    ctx.strokeStyle = "gold";
 
+    // Draw the crown's base
+    ctx.beginPath();
+    ctx.arc(x, y + size, size / 2, 0, Math.PI * 2);
+    ctx.stroke();
+
+    // Draw the crown's spikes
+    const spikeCount = 5;
+    const spikeAngle = (Math.PI * 2) / spikeCount;
+    for (let i = 0; i < spikeCount; i++) {
+        const angle = spikeAngle * i + Math.PI / 2;
+        const spikeHeight = size * 1.5;
+        const spikeX = x + Math.cos(angle) * (size / 2);
+        const spikeY = y - Math.sin(angle) * (size / 2);
+
+        ctx.beginPath();
+        ctx.moveTo(spikeX, spikeY);
+        ctx.lineTo(spikeX + Math.cos(angle) * spikeHeight, spikeY - Math.sin(angle) * spikeHeight);
+        ctx.stroke();
+    }
+}
 
 // const Checkers: NextPageWithLayout = () => {
 
