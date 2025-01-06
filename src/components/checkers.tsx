@@ -1,5 +1,5 @@
 import { ReactElement, useState } from "react"
-import { NextPageWithLayout } from "../_app"
+import { NextPageWithLayout } from "../pages/_app"
 import Layout from "@/app/layout"
 import { BLACK, RED } from "@/components/constants"
 

@@ -7,7 +7,7 @@ import { EnglishDraughts as Draughts,
     EnglishDraughtsComputerFactory as ComputerFactory,
     EnglishDraughtsGame,
  } from "rapid-draughts/english";
-import { DrawCrown } from "./checkers";
+import { DrawCrown } from "../../components/checkers";
 
 
 const PosMap: number[][] = [
