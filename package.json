@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^11.9.0",
+    "hamburger-react": "^2.5.1",
     "next": "14.2.5",
+    "peerjs": "^1.5.4",
     "rapid-draughts": "^1.0.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-use": "^17.5.1"
   },
   "devDependencies": {
     "@types/node": "^20",

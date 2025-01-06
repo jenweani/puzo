@@ -13,7 +13,7 @@ export default function RootLayout({
         <meta name="description" content="Trivial Game platform for teams" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
-      <main className='font-mono'>{children}</main>
+      <main className='font-sans'>{children}</main>
     </>
   )
 }
